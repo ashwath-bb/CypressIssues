@@ -1,0 +1,46 @@
+{
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "app/**/*.{html,md,js,jsx,json,yml}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "{app,test}/**/*.rb": [
+      "bundle exec rubocop -a",
+      "git add"
+    ],
+    "Gemfile": [
+      "bundle exec rubocop -a",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.1.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.6.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "@rails/webpacker": "4.2.2",
+    "axios-react": "^2.0.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-react": "^6.24.1",
+    "core-js": "3",
+    "postcss-cssnext": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react_ujs": "^2.6.1",
+    "tailwindcss": "^1.6.0"
+  },
+  "license": "UNLICENSED"
+}
