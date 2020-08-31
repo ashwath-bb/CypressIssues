@@ -10,7 +10,7 @@ class Header extends Component {
       <div className="header">
         <div className="navbar navbar-expand-lg box-shadow">
           <div className="container">
-            <a className="navbar-brand">{"Wheel"}</a>
+            <a className="navbar-brand">{"CypressIssues"}</a>
 
             <div
               className="collapse navbar-collapse"
